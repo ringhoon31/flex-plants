@@ -46,6 +46,9 @@ header {
     padding: 16px 40px;
     background-color: #2D6A4F;
     color: white;
+    position: sticky;
+    top: 0;
+    z-index: 5;
 }
 
 .logo {
@@ -70,6 +73,7 @@ header {
     height: 280px;
     padding-top: 32px;
     background-color: #D8F3DC;
+    margin: auto;
 }
 
 .hero h2 {
@@ -119,6 +123,18 @@ header {
     padding: 24px;
     background-color: white;
     border: 1px solid #D8F3DC;
+    position:relative
+}
+.badge {
+    position: absolute;
+    background-color:#1B4332;
+    color: white;
+    top: -20px;
+    right: 10px;
+    padding: 5px;
+}
+.card:nth-child(2) .badge{
+    background-color: rgb(238, 46, 46);
 }
 
 .card:nth-child(2) {
@@ -234,4 +250,39 @@ background-color: #98ecc6;
 
 .gallery h3 {
     font-size: 20px;
+}
+form {
+    background-color: white;
+    align-content: center;
+    text-align: center;
+    font-size: 20px;
+}
+button {
+    background-color:#2D6A4F;
+    color: white;
+    padding: 4px;
+}
+footer{
+    background-color: #1B4332;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.sns{
+    display: flex;
+    gap: 10px;
+}
+.fixed{
+    background-color: #1B4332;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    align-content: center;
+    height: 50px;
+    width: 50px;
+    position:fixed;
+    bottom:50px;
+    right:calc(50% - 525px);
+    z-index: 4;
 }
